@@ -11,11 +11,11 @@ class AksharaTokenizerKannada {
 
 	tokenize(string) {
 		return Array.from(string.matchAll(this.expression), x => ({
-			"swara": x[1],
-			"ottu": x[2],
-			"vyanjana": x[3],
-			"vowelsign": x[4],
-			"halant": x[5],
+			"svara": x[1],
+			"samyukta": x[2],
+			"vyamjana": x[3],
+			"gunita": x[4],
+			"virama": x[5],
 			"yogawaha": x[6]
 		}));
 	}

@@ -22,18 +22,18 @@ First of all, you have to create an `AksharaTokenizerKannada` instance.
 ```
 You can then call its `tokenize(string)->string` method
 - Input is a string in Kannada script
-- Output is a list of tokens, where each token is an object of the form 
+- Output is a list of tokens, where each token is an dictionary of the form 
     ```js
     {
-      swara: //svara part of akshara,
-      ottu: //samyukta part of vyanjana,
-      vyanjana: //the core vyanjana,
-      vowelsign: //the gunita of vyanjana,
-      halant: //the ardhakshara
-      yogawaha: //either anuswara or visarga
+      "svara": // svara part of akshara,
+      "samyukta": // saṃyukta part of vyaṃjana,
+      "vyamjana": //core vyaṃjana,
+      "gunita": // guṇita of vyaṃjana,
+      "virama": //virāma of whole vyaṃjana
+      "yogawaha": //either yogavāha of whole akṣara
     }
     ```
-Note that all of the fields of abovementioned object need not be having values simultaneously. In particular,
+Note that all of the fields of the token dictionary need not be having values simultaneously. In particular,
 - the presence of `svara` means the absence of all other fields, with `yogawaha` being an exception in some cases
 - the presence of `vyanjana` means the absence of `swara`
 
