@@ -8,7 +8,7 @@ A regular expression is used match Kannada akṣaras. Regions of interest are ex
 The decoder is written as a ES6 Module, which you need to [`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import) in your code. This can be done as follows.
 ```js
 <script type="module">
-        import {AksharaTokenizerKannada} from 'https://cdn.jsdelivr.net/gh/vinayakakv/akshara_tokenizer/akshara_tokenizer.js'
+        import {AksharaTokenizerKannada} from 'https://cdn.jsdelivr.net/gh/vinayakakv/akshara_tokenizer@1.0.0/akshara_tokenizer.js'
         .
         .
         .
