@@ -11,6 +11,7 @@ class AksharaTokenizerKannada {
 
 	tokenize(string) {
 		return Array.from(string.matchAll(this.expression), x => ({
+			"akshara" : x[0],
 			"svara": x[1],
 			"samyukta": x[2],
 			"vyamjana": x[3],
