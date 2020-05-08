@@ -31,6 +31,12 @@ class AksharaTokenizerKannada {
 				"yogawaha": match[6]
 			});
 		}
+    	if (last_end_index < string.length) {
+    		tokens.push({
+				"is_akshara": false,
+				"content": string.substring(last_end_index, string.length)
+			})
+		}
 		return tokens;
     }
 }
